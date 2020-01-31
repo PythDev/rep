@@ -1,0 +1,151 @@
+from tkinter import *
+ 
+window = Tk()
+
+window.title("Kółko i Krzyżyk")
+ 
+window.geometry('270x270')
+
+helv36 = ('Courier', 40, 'normal')
+
+player1 = 'x'
+player2 = 'o'
+roundof = player2
+def MarkField1():
+    global player1
+    global player2
+    global roundof
+    btn1["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    if btn1["text"] + btn2["text"] + btn3["text"] == "xxx":
+        print ("X WIN")
+    if btn1["text"] + btn4["text"] + btn7["text"] == "xxx":
+        print ("X WIN")
+    btn1["state"] = 'disabled'     
+def MarkField2():
+    global player1
+    global player2
+    global roundof
+
+    btn2["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn2["state"] = 'disabled'   
+def MarkField3():
+    global player1
+    global player2
+    global roundof
+
+    btn3["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn3["state"] = 'disabled'  
+def MarkField4():
+    global player1
+    global player2
+    global roundof
+
+    btn4["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn4["state"] = 'disabled'  
+def MarkField5():
+    global player1
+    global player2
+    global roundof
+    btn5["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn5["state"] = 'disabled'  
+def MarkField6():
+    global player1
+    global player2
+    global roundof
+
+    btn6["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn6["state"] = 'disabled'  
+def MarkField7():
+    global player1
+    global player2
+    global roundof
+
+    btn7["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn7["state"] = 'disabled'          
+def MarkField8():
+    global player1
+    global player2
+    global roundof
+
+    btn8["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn8["state"] = 'disabled'
+def MarkField9():
+    global player1
+    global player2
+    global roundof
+    btn9["text"] = roundof
+    if roundof == player2:
+        roundof = player1
+    else:
+        roundof = player2
+    btn9["state"] = 'disabled'          
+btn1 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField1)
+btn1.grid(column=1, row=0)
+
+
+
+btn2 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField2)
+btn2.grid(column=2, row=0)
+
+btn3 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField3)
+btn3.grid(column=3, row=0)
+
+btn4 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField4)
+btn4.grid(column=1, row=1)
+
+
+btn5 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField5)
+ 
+btn5.grid(column=2, row=1)
+
+btn6 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField6)
+ 
+btn6.grid(column=3, row=1)
+
+btn7 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField7)
+ 
+btn7.grid(column=1, row=2)
+ 
+btn8 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField8)
+ 
+btn8.grid(column=2, row=2)
+ 
+btn9 = Button(window, text="", width=2, height=1, bg='#ffffff', fg='#ffffff', activebackground='#ffffff', activeforeground='#ffffff', font=helv36, command = MarkField9)
+ 
+btn9.grid(column=3, row=2)
+ 
+
+ 
+ 
